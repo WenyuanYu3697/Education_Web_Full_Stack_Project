@@ -1,4 +1,4 @@
-## 📚 Studify App
+## 📚 Studify App (FULL STACK WEB PROJECT)
 
 The app is a part of Internet Programming course project
 
@@ -12,7 +12,7 @@ A multi-page website, which presents an online learning service product.
 
 ### Technolgies Used
 
-HTML, CSS, JS
+HTML5, CSS3, JS, Jquery, MySQL, PHP
 
 ### Link
 
