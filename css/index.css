@@ -1,0 +1,405 @@
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Black.ttf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-ExtraBold.ttf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Bold.ttf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Medium.ttf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Regular.ttf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Light.ttf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-ExtraLight.ttf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Thin.ttf') format('opentype');
+  font-weight: 100;
+}
+
+body,
+html {
+  margin: 0;
+  font-size: 16px;
+
+  --brand-color: #525fe1;
+  --brand-color-orange: #f86f03;
+  --footer-background: #231f40;
+  --button-background: #e6e7f9;
+
+  --typography-main: #19202d;
+  --typography-secondary: #6e8098;
+  --typography-button: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Urbanist';
+  margin: 0;
+  color: var(--typography-main);
+}
+
+p,
+a {
+  font-family: 'Urbanist';
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: transparent;
+}
+
+.header-menu-mobile,
+.mobile-menu-background,
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-background {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu {
+  position: absolute;
+  height: 100vh;
+  background: #fefefe;
+  width: 50vw;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  right: 0;
+}
+
+.mobile-menu-cross {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-cross img {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.mobile-menu-items a {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--typography-main);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header-menu-logo h1 {
+  color: var(--brand-color);
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.header-menu-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu-options a {
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+  font-family: 'Urbanist';
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--typography-main);
+}
+
+#menu-active {
+  box-sizing: border-box;
+  border-bottom: 0.125rem solid #000;
+}
+
+#menu-active:hover {
+  border-bottom: 0.125rem solid var(--brand-color);
+}
+
+.header-menu-options a:hover {
+  color: var(--brand-color);
+}
+
+.header-menu-options a:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.brand-button {
+  background-color: var(--brand-color);
+  color: var(--typography-button);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  font-weight: 600;
+  font-family: 'Urbanist';
+  border: none;
+  padding: 1rem 2.25rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+
+.brand-button:hover {
+  transform: scale(1.01);
+  background: var(--brand-color-orange);
+}
+
+footer {
+  background-color: var(--brand-color);
+  padding: 4rem 6rem 1.5rem 6rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 6rem;
+}
+
+.copyright-container {
+  margin-top: 6rem;
+}
+
+.copyright-text {
+  margin: 0;
+  color: var(--typography-button);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-logo {
+  color: var(--typography-button);
+  font-size: 2rem;
+}
+
+.footer-logo-text {
+  color: var(--typography-button);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin: 1rem 0;
+}
+
+.footer-social {
+  cursor: pointer;
+  width: 2.5rem;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.footer-links-list a {
+  color: var(--typography-button);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: 'Urbanist';
+}
+
+.footer-links-list a:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.footer-contanct-list p {
+  color: var(--typography-button);
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header-menu-options {
+    display: none;
+  }
+
+  .header-menu-login {
+    display: none;
+  }
+
+  .header-menu-mobile {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .header-menu-mobile img {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .header-menu {
+    padding: 1.5rem 1rem;
+  }
+
+  footer {
+    padding: 4rem 2rem 1.5rem 2rem;
+  }
+
+  .mobile-menu {
+    width: 80vw;
+    padding: 2rem;
+  }
+
+  .header-menu-mobile img {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-menu {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1840px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1940px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 2140px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 2240px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 2340px) {
+  html {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 2440px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 2540px) {
+  html {
+    font-size: 29px;
+  }
+}
+
+@media screen and (min-width: 2840px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 5760px) {
+  html {
+    font-size: 62px;
+  }
+}

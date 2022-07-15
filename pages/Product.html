@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <script defer src="../js/product.js"></script>
+    <title>Studify - Start Better Learning</title>
+  </head>
+  <body>
+    <header style="position: unset" class="header-menu">
+      <div class="header-menu-logo">
+        <h1>Studify</h1>
+      </div>
+      <div class="header-menu-options">
+        <a href="../index.html">Home</a>
+        <a id="menu-active" href="./Product.html">Information</a>
+        <a href="./About.html">About</a>
+        <a href="./Feedback.html">Feedback</a>
+      </div>
+      <div class="header-menu-login">
+        <button onclick="location.href='/pages/Login.html'" class="brand-button">Login</button>
+      </div>
+      <div id="mobile-menu-burger" class="header-menu-mobile">
+        <img src="../img/MenuIcon.svg" />
+      </div>
+    </header>
+
+    <div class="mobile-menu-background">
+      <div class="mobile-menu">
+        <div id="mobile-menu-close" class="mobile-menu-cross">
+          <img src="../img/CrossIcon.svg" />
+        </div>
+        <div class="mobile-menu-items">
+          <a href="../index.html">Home</a>
+          <a href="./Product.html">Information</a>
+          <a href="./About.html">About</a>
+          <a href="./Feedback.html">Feedback</a>
+          <button onclick="location.href='./pages/Login.html'" class="brand-button">Login</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <!----=================== MAIN ==============-->
+    <main class="main">
+
+      
+      <section class="login-section">
+        <div class="page-section-name-container">
+          <h1 class="page-section-name">Information</h1>
+          <div style="width: 9rem" class="page-section-breadcrumbs">
+            <a href="../index.html" class="breadcrumbs-backlink breadcrumbs-text">Home</a>
+            <img class="breadcrumbs-arrow" src="../img/DecorativeIcons/ArrowRightIcon.svg" />
+            <p class="breadcrums-current breadcrumbs-text">Information</p>
+          </div>
+          <div style="position: relative">
+            <img class="breadcrumbs-decoration" id="circles" src="../img/DecorativeIcons/CircleGroupIcon.svg" />
+            <img class="breadcrumbs-decoration" id="earth" src="../img/DecorativeIcons/EarthIcon.svg" />
+            <img class="breadcrumbs-decoration" id="purple" src="../img/DecorativeIcons/PurpleShapeIcon.svg" />
+            <img class="breadcrumbs-decoration" id="lines" src="../img/DecorativeIcons/PurpleLinesIcon.svg" />
+          </div>
+        </div>
+      </section>
+        
+      <!----=================== COURSES ==============-->
+      <section class="courses section" id="courses">
+
+          <h2 class="section__title">Studify - Online Courses <br> For Anyone, Anywhere</h2>
+          <p class="section__subtitle">No more struggle with books and commute</p>
+
+          <div class="courses__container grid container">
+             <div class="course__item">
+               <div class="course__box">
+                  <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                  <div class="course__tag">Art & Design</div>
+               </div>
+               <div class="course__content">
+                  <div class="course__meta">
+                      <div class="course__lesson">
+                          <i class="uil uil-book-alt"></i> 43 Lesson
+                      </div>
+                      
+                      <div class="course__rating">
+                         <i class="uis uis-star"></i> 4. (44)
+                       </div>
+                      </div>     
+                  <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                  <div class="course__teacher">
+                      <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                      <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                  </div>
+               </div> 
+
+               <div class="course__more">
+                   <div class="course__prices">
+                       <span class="course__discount">47$</span>
+                       <span class="course__price">77$</span>
+                    </div>
+
+                    <span data-modal-target="#modal" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                    </span>
+               </div>
+              <div class="modal" id="modal">
+                      <div class="modal-body">
+                          <div class="modal-header">
+                              <div class="title">Details</div>
+                              <button data-close-button class="close-button">&times;</button>
+                          </div>
+                          Course description 1
+                      </div>
+              </div>
+             </div>   
+
+             <div class="course__item">
+              <div class="course__box">
+                 <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                 <div class="course__tag">Art & Design</div>
+              </div>
+              <div class="course__content">
+                 <div class="course__meta">
+                     <div class="course__lesson">
+                         <i class="uil uil-book-alt"></i> 43 Lesson
+                     </div>
+                     
+                     <div class="course__rating">
+                        <i class="uis uis-star"></i> 4. (44)
+                      </div>
+                     </div>     
+                 <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                 <div class="course__teacher">
+                     <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                     <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                 </div>
+              </div> 
+
+              <div class="course__more">
+                  <div class="course__prices">
+                      <span class="course__discount">47$</span>
+                      <span class="course__price">77$</span>
+                   </div>
+
+                   <span data-modal-target="#modal2" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                   </span>
+              </div>
+             <div class="modal" id="modal2">
+                     <div class="modal-body">
+                         <div class="modal-header">
+                             <div class="title">Details</div>
+                             <button data-close-button class="close-button">&times;</button>
+                         </div>
+                         Course description 2
+                     </div>
+             </div>
+            </div>   
+
+            <div class="course__item">
+              <div class="course__box">
+                 <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                 <div class="course__tag">Art & Design</div>
+              </div>
+              <div class="course__content">
+                 <div class="course__meta">
+                     <div class="course__lesson">
+                         <i class="uil uil-book-alt"></i> 43 Lesson
+                     </div>
+                     
+                     <div class="course__rating">
+                        <i class="uis uis-star"></i> 4. (44)
+                      </div>
+                     </div>     
+                 <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                 <div class="course__teacher">
+                     <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                     <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                 </div>
+              </div> 
+
+              <div class="course__more">
+                  <div class="course__prices">
+                      <span class="course__discount">47$</span>
+                      <span class="course__price">77$</span>
+                   </div>
+
+                   <span data-modal-target="#modal3" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                   </span>
+              </div>
+             <div class="modal" id="modal3">
+                     <div class="modal-body">
+                         <div class="modal-header">
+                             <div class="title">Details</div>
+                             <button data-close-button class="close-button">&times;</button>
+                         </div>
+                         Course description 3
+                     </div>
+             </div>
+            </div> 
+
+            <div class="course__item">
+              <div class="course__box">
+                 <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                 <div class="course__tag">Art & Design</div>
+              </div>
+              <div class="course__content">
+                 <div class="course__meta">
+                     <div class="course__lesson">
+                         <i class="uil uil-book-alt"></i> 43 Lesson
+                     </div>
+                     
+                     <div class="course__rating">
+                        <i class="uis uis-star"></i> 4. (44)
+                      </div>
+                     </div>     
+                 <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                 <div class="course__teacher">
+                     <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                     <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                 </div>
+              </div> 
+
+              <div class="course__more">
+                  <div class="course__prices">
+                      <span class="course__discount">47$</span>
+                      <span class="course__price">77$</span>
+                   </div>
+
+                   <span data-modal-target="#modal4" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                   </span>
+              </div>
+             <div class="modal" id="modal4">
+                     <div class="modal-body">
+                         <div class="modal-header">
+                             <div class="title">Details</div>
+                             <button data-close-button class="close-button">&times;</button>
+                         </div>
+                         Course description 4
+                     </div>
+             </div>
+            </div>
+
+            <div class="course__item">
+              <div class="course__box">
+                 <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                 <div class="course__tag">Art & Design</div>
+              </div>
+              <div class="course__content">
+                 <div class="course__meta">
+                     <div class="course__lesson">
+                         <i class="uil uil-book-alt"></i> 43 Lesson
+                     </div>
+                     
+                     <div class="course__rating">
+                        <i class="uis uis-star"></i> 4. (44)
+                      </div>
+                     </div>     
+                 <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                 <div class="course__teacher">
+                     <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                     <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                 </div>
+              </div> 
+
+              <div class="course__more">
+                  <div class="course__prices">
+                      <span class="course__discount">47$</span>
+                      <span class="course__price">77$</span>
+                   </div>
+
+                   <span data-modal-target="#modal5" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                   </span>
+              </div>
+             <div class="modal" id="modal5">
+                     <div class="modal-body">
+                         <div class="modal-header">
+                             <div class="title">Details</div>
+                             <button data-close-button class="close-button">&times;</button>
+                         </div>
+                         Course description 5
+                     </div>
+             </div>
+            </div>
+
+            <div class="course__item">
+              <div class="course__box">
+                 <img src="../img/Harvard-University-CS50.png" alt="" class="course__img">
+                 <div class="course__tag">Art & Design</div>
+              </div>
+              <div class="course__content">
+                 <div class="course__meta">
+                     <div class="course__lesson">
+                         <i class="uil uil-book-alt"></i> 43 Lesson
+                     </div>
+                     
+                     <div class="course__rating">
+                        <i class="uis uis-star"></i> 4. (44)
+                      </div>
+                     </div>     
+                 <h3 class="course__title">Bestselling course from prof. Tsurkan</h3>
+                 <div class="course__teacher">
+                     <img src="../img/Screenshot (139).png" alt="" class="course__teacher-img">
+                     <h3 class="course__teacher-title">Prof.Tsurkan</h3>
+                 </div>
+              </div> 
+
+              <div class="course__more">
+                  <div class="course__prices">
+                      <span class="course__discount">47$</span>
+                      <span class="course__price">77$</span>
+                   </div>
+
+                   <span data-modal-target="#modal6" class="course__button">View details <i class="uil uil-arrow-right course__button-icon"></i> 
+                   </span>
+              </div>
+             <div class="modal" id="modal6">
+                     <div class="modal-body">
+                         <div class="modal-header">
+                             <div class="title">Details</div>
+                             <button data-close-button class="close-button">&times;</button>
+                         </div>
+                         Course description 6
+                     </div>
+             </div>
+            </div>
+          </div> 
+      </section>
+
+      <!----=================== BRANDS ==============-->
+      <section class="brand section container">
+          <h3 class="brand__title">Trusted by 100 world's best companies</h3>
+
+          <div class="brand__container grid">
+              <img src="../img/brand-1.png" alt="">
+              <img src="../img/brand-2.png" alt="">
+              <img src="../img/brand-3.png" alt="">
+              <img src="../img/brand-4.png" alt="">
+              <img src="../img/brand-5.png" alt="">
+              <img src="../img/brand-6.png" alt="">
+          </div>
+
+          <span class="brand__button">
+              View all partners <i class="uil uil-arrow-right brand__button-icon"></i>
+          </span>
+      </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <h1 class="footer-logo">Studify</h1>
+        <p class="footer-logo-text">Whether you want to learn or to share what you know, you've come to the right place.
+          As a global destination
+          for online learning, we connect people through knowledge.
+        </p>
+        <div>
+          <img class="footer-social" src="../img/SocialIcons/LinkedIn.svg" />
+          <img class="footer-social" src="../img/SocialIcons/Facebook.svg" />
+          <img class="footer-social" src="../img/SocialIcons/Twitter.svg" />
+          <img class="footer-social" src="../img/SocialIcons/Instagram.svg" />
+        </div>
+      </div>
+      <div class="footer-links-container">
+        <h1 class="footer-logo">Pages</h1>
+        <div class="footer-links-list">
+          <a href="../index.html">Home</a>
+          <a href="../pages/Product.html">Information</a>
+          <a href="../pages/About.html">About</a>
+          <a href="../pages/Feedback.html">Feedback</a>
+        </div>
+      </div>
+      <div class="footer-contact-container">
+        <h1 class="footer-logo">Contact</h1>
+        <div class="footer-contanct-list">
+          <p>Kyrylo Lvov, n01414058</p>
+          <p>Wenyuan Yu, n01403697</p>
+          <p>Artem Tsurkan, n01414146</p>
+          <p>Zoyeba Mahbub, n01445837</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-container">
+      <p class="copyright-text">Copyright 2022 Studify Designed For CENG 256. All Rights Reserved</p>
+    </div>
+  </footer>
+  </body>
+</html>
