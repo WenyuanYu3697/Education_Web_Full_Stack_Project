@@ -10,7 +10,6 @@
     <title>Login</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   </head>
-
   <body>
     <header style="position: unset" class="header-menu">
       <div class="header-menu-logo">
@@ -63,18 +62,11 @@
       <div class="form-section">
         <div class="form-container">
           <h2 class="form-container-title">Login</h2>
-          <form>
+          <form method="post" action="../php/validation.php">
             <input type="text" name="username" placeholder="Username" id="username" class="form-input" />
-            <label for="text" class="error" id="username_error"></label>
-            <input
-              style="margin-top: 2rem"
-              type="password"
-              name="password"
-              placeholder="Password"
-              id="password"
-              class="form-input"
-            />
-            <label for="password" class="error" id="password_error"></label>
+            <label for="text" class="error" id="username_error" name="user_error"><?php echo $userError; ?> </label>
+            <input style="margin-top: 2rem"type="password" name="password" placeholder="Password" id="password" class="form-input"/>
+            <label for="password" class="error" id="password_error" name="password_error"><?php echo $passwordError; ?></label>
             <button type="submit" id="login-button" class="brand-button">Login</button>
           </form>
           <p id="open-button" class="form-section-help">Need help logging in?</p>
@@ -149,5 +141,6 @@
     <script type="text/javascript" src="../js/login.js"></script>
     <script type="text/javascript" src="../js/menu.js"></script>
     <script type="text/javascript" src="../js/instructions.js"></script>
+  
   </body>
 </html>

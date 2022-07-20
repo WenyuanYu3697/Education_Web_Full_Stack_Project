@@ -63,11 +63,12 @@ window.onload = function () {
       counter++;
     }
 
+    /*
     if (counter == 2) {
       window.location.href = 'LoginSuccess.html';
       return false;
     }
-  };
+  };*/
 
   function specification(username) {
     var letter = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
